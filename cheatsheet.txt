@@ -1,0 +1,22 @@
+==================================
+    WEZTERM CHEATSHEET
+==================================
+
+--- Tro giup & Tien ich ---
+Ctrl + Shift + P  : Mo file Cheatsheet nay
+Ctrl + K          : Xoa man hinh va bo dem cuon
+
+--- Chinh sua Van ban ---
+Ctrl + Shift + C  : Sao chep (Copy)
+Ctrl + Shift + V  : Dan (Paste)
+Chuot Phai        : Dan (Paste)
+
+--- Quan ly Tab & Pane ---
+Ctrl + T          : Mo Tab moi
+Ctrl + Shift + W  : Dong Tab hien tai
+Ctrl + D          : Chia doi Pane theo chieu ngang
+Ctrl + Shift + D  : Chia doi Pane theo chieu doc
+Ctrl + W          : Dong Pane hien tai
+
+--- Dieu huong Pane ---
+Ctrl + Mui ten    : Di chuyen giua cac Pane

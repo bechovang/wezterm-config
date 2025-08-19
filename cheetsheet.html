@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WezTerm Cheatsheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #1a1b26;
+            --foreground: #c0caf5;
+            --card-bg: #1f2335;
+            --comment: #565f89;
+            --blue: #7aa2f7;
+            --cyan: #7dcfff;
+            --green: #9ece6a;
+            --red: #f7768e;
+            --kbd-bg: #414868;
+            --kbd-border: #292e42;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--kbd-border);
+        }
+
+        h1 {
+            color: var(--blue);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h1 .icon {
+            font-size: 2rem;
+        }
+        
+        h1 span.subtitle {
+            font-size: 1rem;
+            color: var(--comment);
+            font-weight: 400;
+            margin-left: auto;
+        }
+
+        h2 {
+            color: var(--cyan);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--kbd-border);
+        }
+
+        .cheatsheet-grid {
+            display: grid;
+            grid-template-columns: minmax(220px, 30%) 1fr;
+            gap: 18px 25px;
+            align-items: center;
+        }
+
+        .keys {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            font-family: 'Fira Code', monospace;
+            color: var(--foreground);
+            font-weight: 500;
+        }
+
+        kbd {
+            background-color: var(--kbd-bg);
+            color: var(--foreground);
+            padding: 6px 10px;
+            border-radius: 6px;
+            border-bottom: 2px solid var(--kbd-border);
+            font-family: inherit;
+            font-size: 0.9rem;
+            min-width: 30px;
+            text-align: center;
+            transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        }
+        
+        .keys:hover kbd {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+        }
+
+        .description {
+            color: var(--comment);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            <span class="icon">🚀</span>
+            WezTerm Cheatsheet
+            <span class="subtitle">Tokyo Night Theme</span>
+        </h1>
+
+        <h2>Trợ giúp & Tiện ích</h2>
+        <div class="cheatsheet-grid">
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd></div>
+            <div class="description">Mở file Cheatsheet này</div>
+            
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>F1</kbd></div>
+            <div class="description">Hiển thị Cheatsheet tích hợp (Launcher)</div>
+            
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>K</kbd></div>
+            <div class="description">Xóa màn hình và bộ đệm cuộn</div>
+        </div>
+
+        <h2>Chỉnh sửa Văn bản</h2>
+        <div class="cheatsheet-grid">
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>C</kbd></div>
+            <div class="description">Sao chép (Copy) văn bản đã chọn</div>
+            
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>V</kbd></div>
+            <div class="description">Dán (Paste) văn bản từ clipboard</div>
+            
+            <div class="keys"><kbd>Chuột Phải</kbd></div>
+            <div class="description">Dán (Paste) văn bản từ clipboard</div>
+        </div>
+
+        <h2>Quản lý Tab & Pane</h2>
+        <div class="cheatsheet-grid">
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>T</kbd></div>
+            <div class="description">Mở Tab mới</div>
+            
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>W</kbd></div>
+            <div class="description">Đóng Tab hiện tại</div>
+
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>D</kbd></div>
+            <div class="description">Chia đôi Pane theo chiều ngang</div>
+            
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>D</kbd></div>
+            <div class="description">Chia đôi Pane theo chiều dọc</div>
+            
+            <div class="keys"><kbd>CTRL</kbd>+<kbd>W</kbd></div>
+            <div class="description">Đóng Pane hiện tại</div>
+        </div>
+        
+        <h2>Điều hướng</h2>
+        <div class="cheatsheet-grid">
+            <div class="keys"><kbd>CTRL</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd></div>
+            <div class="description">Di chuyển giữa các Pane</div>
+        </div>
+    </div>
+
+</body>
+</html>
