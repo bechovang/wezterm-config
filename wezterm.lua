@@ -26,6 +26,7 @@ config.window_padding = {
 config.font = wezterm.font_with_fallback {
   { family = 'JetBrains Mono', weight = 'Medium' },
   'FiraCode Nerd Font',
+  'Segoe UI',  -- Supports Vietnamese characters well
   'Consolas',
 }
 config.font_size = 14.0
