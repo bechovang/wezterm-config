@@ -1,4 +1,4 @@
-
+lưu ở : C:\Users\Admin\.config\wezterm\wezterm.lua
 
 # Cài đặt và Cấu hình WezTerm Nâng cao cho Windows
 
@@ -230,4 +230,5 @@ Phím tắt `CTRL + SHIFT + P` được thiết kế để mở một file `chea
 | `Chuột phải` | Dán từ Clipboard |
 
 ---
+
 Chúc mừng! Bạn đã hoàn tất việc cài đặt. Hãy tận hưởng terminal mới của mình
